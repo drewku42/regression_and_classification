@@ -16,10 +16,10 @@ def compute_cost(x, y, w, b):
   m = x.shape[0]   # get the number of training examples
 
   cost_sum = 0
-  for i in range(m):   # for each training example
-    f_wb = w * x[i] + b   # model for single variable linear regression
-    cost = (f_wb - y[i]) ** 2   # compute mean squared error for ith term
-    cost_sum += cost   # compute sum of each term's mean squared error
+  for i in range(m):                      # for each training example...
+    f_wb = w * x[i] + b                   # calculate single variable linear regression model for ith term
+    cost = (f_wb - y[i]) ** 2             # compute mean squared error for ith term
+    cost_sum += cost                      # incrament sum of each term's mean squared error
   total_cost = (1 / (2 * m)) * cost_sum   #  divide sum by 1/2m
 
-  return total_cost   # return total cost
+  return total_cost                       # return total cost
