@@ -19,14 +19,14 @@ def compute_gradient(X, y, w, b, *argv):
     dj_dw = np.zeros(w.shape)   # find partial derivative of w
     dj_db = 0.   # partial derivative of b is 0
   
-    for i in range(m):   # for each training example
-        f_wb_i = sigmoid(np.dot(X[i],w) + b)   # plug logistic regression function into sigmoid function
-        err_i = f_wb_i - y[i]   # calculate error of ith term
-        for j in range(n):   # for each feature
+    for i in range(m):                             # for each training example
+        f_wb_i = sigmoid(np.dot(X[i],w) + b)       # plug logistic regression function into sigmoid function
+        err_i = f_wb_i - y[i]                      # calculate error of ith term
+        for j in range(n):                         # for each feature
             dj_dw[j] = dj_dw[j] + err_i * X[i,j]   # calculate partial of jth feature
-        dj_db = dj_db + err_i   # update bias parameter
-    dj_dw = dj_dw/m   # update w parameter
-    dj_db = dj_db/m   # update b parameter
+        dj_db = dj_db + err_i                      # update bias parameter
+    dj_dw = dj_dw/m                                # update w parameter
+    dj_db = dj_db/m                                # update b parameter
 
         
-    return dj_db, dj_dw   # return updated parameters
+    return dj_db, dj_dw   # return weights
