@@ -1,4 +1,4 @@
-
+import numpy as np
 
 def compute_cost(X, y, w, b):
     """
