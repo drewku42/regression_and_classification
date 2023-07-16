@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 def compute_cost(X, y, w, b):
     """
