@@ -1,2 +1,4 @@
 # regression_and_classification
-Code learned and developed from the Coursera 'Supervised Machine Learning: Regression and Classification' course. Through this course I learned how to implement linear and logistic regression as well as the associated cost functions and gradient descent optimizations.
+
+The code found in this repository are the python implementations of cost functions and gradient descent algorithms for linear and logistic regression models. I learned the foundation of this code through 
+the Machine Learning Specialization offered through Coursera by Andrew Ng. Building these functions from scratch has reinforced my understanding of supervised learning algorithms.
